@@ -1,6 +1,6 @@
 1. git clone this repo
 2. go to chrome extensions page
-3. ![image-20210821180517659](images\image-20210821180517659.png)
+3. ![image-20210821180517659](images\image-20210821180517659.png?raw=true)
 
 4. click load unpacked to mount the project u just cloned
    ![image-20210821180620573](images\image-20210821180620573.png)
