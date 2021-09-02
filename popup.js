@@ -11,7 +11,7 @@ changeColor.addEventListener("click", async () => {
   
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      function: setPageBackgroundColor,
+      function: openVideoTab,
     });
   });
   
@@ -21,4 +21,11 @@ changeColor.addEventListener("click", async () => {
     chrome.storage.sync.get("color", ({ color }) => {
       document.body.style.backgroundColor = color;
     });
+  }
+
+  function openVideoTab() {
+    let videoElement = document.getElementsByClassName("vjs-tech")[0].getAttribute("src");
+    alert(videoElement);
+    // let attributte = videoElement.
+    // alert("" + attributte);
   }
