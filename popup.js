@@ -24,8 +24,7 @@ changeColor.addEventListener("click", async () => {
   }
 
   function openVideoTab() {
-    let videoElement = document.getElementsByClassName("vjs-tech")[0].getAttribute("src");
-    alert(videoElement);
-    // let attributte = videoElement.
-    // alert("" + attributte);
+    let videoUrl = document.getElementsByClassName("vjs-tech")[0].getAttribute("src");
+    
+    window.open(videoUrl);
   }
